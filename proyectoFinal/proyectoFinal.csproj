@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D50AA29-4C37-46BD-9C9D-D6C74F244B4B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>proyectoFinal</RootNamespace>
+    <AssemblyName>proyectoFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccionesCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccionesCliente.Designer.cs">
+      <DependentUpon>frmAccionesCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccionesVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccionesVendedor.Designer.cs">
+      <DependentUpon>frmAccionesVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddClient.Designer.cs">
+      <DependentUpon>frmAddClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddMoney.Designer.cs">
+      <DependentUpon>frmAddMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddOrder.Designer.cs">
+      <DependentUpon>frmAddOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddProd.Designer.cs">
+      <DependentUpon>frmAddProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddSeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddSeller.Designer.cs">
+      <DependentUpon>frmAddSeller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddToList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddToList.Designer.cs">
+      <DependentUpon>frmAddToList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBankByCi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBankByCi.Designer.cs">
+      <DependentUpon>frmBankByCi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyByCi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyByCi.Designer.cs">
+      <DependentUpon>frmBuyByCi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangeStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangeStatus.Designer.cs">
+      <DependentUpon>frmChangeStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientsWhoSpentMoreThan100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientsWhoSpentMoreThan100.Designer.cs">
+      <DependentUpon>frmClientsWhoSpentMoreThan100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientsWithMoreThan3Purchases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientsWithMoreThan3Purchases.Designer.cs">
+      <DependentUpon>frmClientsWithMoreThan3Purchases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditBank.Designer.cs">
+      <DependentUpon>frmEditBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditProduct.Designer.cs">
+      <DependentUpon>frmEditProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListsByCi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListsByCi.Designer.cs">
+      <DependentUpon>frmListsByCi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMostExpensiveProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostExpensiveProduct.Designer.cs">
+      <DependentUpon>frmMostExpensiveProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdersByCi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdersByCi.Designer.cs">
+      <DependentUpon>frmOrdersByCi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdsById.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdsById.Designer.cs">
+      <DependentUpon>frmProdsById.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductActions.Designer.cs">
+      <DependentUpon>frmProductActions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductsOver50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductsOver50.Designer.cs">
+      <DependentUpon>frmProductsOver50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectCi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectCi.Designer.cs">
+      <DependentUpon>frmSelectCi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectSellerId.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectSellerId.Designer.cs">
+      <DependentUpon>frmSelectSellerId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerClientes.Designer.cs">
+      <DependentUpon>frmVerClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerCuentas.Designer.cs">
+      <DependentUpon>frmVerCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerListas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerListas.Designer.cs">
+      <DependentUpon>frmVerListas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerPedidos.Designer.cs">
+      <DependentUpon>frmVerPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerProductos.Designer.cs">
+      <DependentUpon>frmVerProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerVendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerVendedores.Designer.cs">
+      <DependentUpon>frmVerVendedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestorDeBaseDeDatos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccionesCliente.resx">
+      <DependentUpon>frmAccionesCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccionesVendedor.resx">
+      <DependentUpon>frmAccionesVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddClient.resx">
+      <DependentUpon>frmAddClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddMoney.resx">
+      <DependentUpon>frmAddMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddOrder.resx">
+      <DependentUpon>frmAddOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddProd.resx">
+      <DependentUpon>frmAddProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddSeller.resx">
+      <DependentUpon>frmAddSeller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddToList.resx">
+      <DependentUpon>frmAddToList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBankByCi.resx">
+      <DependentUpon>frmBankByCi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyByCi.resx">
+      <DependentUpon>frmBuyByCi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeStatus.resx">
+      <DependentUpon>frmChangeStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientsWhoSpentMoreThan100.resx">
+      <DependentUpon>frmClientsWhoSpentMoreThan100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientsWithMoreThan3Purchases.resx">
+      <DependentUpon>frmClientsWithMoreThan3Purchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditBank.resx">
+      <DependentUpon>frmEditBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditProduct.resx">
+      <DependentUpon>frmEditProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListsByCi.resx">
+      <DependentUpon>frmListsByCi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMostExpensiveProduct.resx">
+      <DependentUpon>frmMostExpensiveProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdersByCi.resx">
+      <DependentUpon>frmOrdersByCi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdsById.resx">
+      <DependentUpon>frmProdsById.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductActions.resx">
+      <DependentUpon>frmProductActions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductsOver50.resx">
+      <DependentUpon>frmProductsOver50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectCi.resx">
+      <DependentUpon>frmSelectCi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectSellerId.resx">
+      <DependentUpon>frmSelectSellerId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerClientes.resx">
+      <DependentUpon>frmVerClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerCuentas.resx">
+      <DependentUpon>frmVerCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerListas.resx">
+      <DependentUpon>frmVerListas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerPedidos.resx">
+      <DependentUpon>frmVerPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerProductos.resx">
+      <DependentUpon>frmVerProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerVendedores.resx">
+      <DependentUpon>frmVerVendedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Amazon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Amazon.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amazon_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Amazon.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\images.png" />
+    <None Include="Resources\descarga %281%29.png" />
+    <None Include="Resources\descarga.png" />
+    <None Include="Resources\280-2801401_me-big-order-form-format-order-icon-png.png" />
+    <None Include="Resources\542-5427453_client-icon-clipart-clipart-royalty-free-library-client.png" />
+    <None Include="Resources\seller-1490747-1262220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
